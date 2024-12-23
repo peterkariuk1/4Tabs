@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 40px;
+  background-color: rgb(228, 228, 228);
+}
+header {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  color: gray;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.first-tab {
+  border-bottom: 2px solid black;
+  color: black;
+}
+header div {
+  cursor: pointer;
+  padding: 5px 15px;
+  transition: 0.2s ease-in-out transform;
+}
+header div:hover {
+  color: black;
+}
+header div:active {
+  transform: scale(0.95);
+}
+header div p {
+  margin: 0;
+}
+.tab-content-container {
+  background-color: black;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 50px 10px;
+  font-size: 28px;
+  border-radius: 12px;
+}
+
+.second-tab.active,
+.third-tab.active,
+.fourth-tab.active {
+  border-bottom: 2px solid black;
+  color: black;
+}
